@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+  </head>
+
+  <style>
+    #canvas {
+      border: 5px groove black;
+      width: 900px;
+      height: 750px;
+      position: relative;
+      box-sizing: content-box;
+      margin-top: 10px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    #pauseButton,
+    #resumeButton,
+    #points {
+      display: none;
+    }
+  </style>
+
+  <body>
+    <button id="startButton" onclick="startGame()">Start Game</button>
+    <button id="resumeButton" onclick="resumeGame()">Resume Game</button>
+    <button id="pauseButton" onclick="pauseGame()">Pause Game</button>
+    <h2 id="points">Points: 0</h2>
+    <div id="canvas"></div>
+    <pre id="messages"></pre>
+  </body>
+
+  <script src="./game.js"></script>
+</html>
